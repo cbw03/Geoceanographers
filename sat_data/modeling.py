@@ -88,5 +88,6 @@ plt.ylabel("Predicted pCO2")
 plt.title("Predicted vs Observed pCO2")
 plt.plot([y_test.min(), y_test.max()],
          [y_test.min(), y_test.max()])
+plt.figtext(0.5, 0.05, f"R^2: {r2}", ha = "center", fontsize=12, color="red") 
 plt.show()
 
